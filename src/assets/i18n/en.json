@@ -31,9 +31,9 @@
             "BUTTON_TEXT": "Install all"
           },
           "VIRTUAL_BOX": {
-            "TITLE": "Install Virtaull Box",
+            "TITLE": "Install Virtual Box",
             "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
-            "BUTTON_TEXT": "Install Virtaull Box"
+            "BUTTON_TEXT": "Install Virtual Box"
           },
           "VAGRANT": {
             "TITLE": "Install Vagrant",
