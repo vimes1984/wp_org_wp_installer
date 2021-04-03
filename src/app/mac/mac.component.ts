@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ElectronService } from '../core/services';
+
 
 @Component({
   selector: 'app-detail',
@@ -7,19 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MacComponent implements OnInit {
 
-  constructor() { }
-  
-  installAll(){
-    alert('install all');
-  }
-  
-  installVirtualBox(){
-    alert('install Virtual box');
-  } 
+  constructor(
+    private electronService: ElectronService
+    ){
+      this.electronService.ipcRenderer.send('test', 'test');
+    }
 
-  installVagrant(){
-    alert('Install Vagrant')
-  }
+   installfunctions = {
+    installAll: function(){
+      alert('install all');
+      let electronService = new ElectronService();
+      electronService.ipcRenderer.send('installAllMac', 'ALL');
+    },
+    installVirtualBox: function(){
+      alert('install Virtual box');
+      let electronService = new ElectronService();
+      electronService.ipcRenderer.send('installVirtualBoxMac', 'Vbox');
+    },
+    installVagrant: function(){
+      alert('Install Vagrant');
+      let electronService = new ElectronService();
+      electronService.ipcRenderer.send('installVagrantMac', 'Vagrant');
+    }
+  };
   ngOnInit(): void { }
-
 }

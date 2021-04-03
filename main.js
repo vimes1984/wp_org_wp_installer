@@ -3,6 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
+var server_side_1 = require("./src/server-side");
+server_side_1.serverSide();
 // Initialize remote module
 require('@electron/remote/main').initialize();
 var win = null;

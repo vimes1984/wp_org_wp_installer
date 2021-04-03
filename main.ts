@@ -1,6 +1,9 @@
 import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
+//Import our server side code to run the installers
+import {serverSide} from './src/server-side';
+serverSide();
 
 // Initialize remote module
 require('@electron/remote/main').initialize();
@@ -78,8 +81,7 @@ try {
     if (win === null) {
       createWindow();
     }
-  });
-
+  });  
 } catch (e) {
   // Catch Error
   // throw e;
