@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
+//Import our server side code to run the installers
 var server_side_1 = require("./src/server-side");
 server_side_1.serverSide();
 // Initialize remote module
