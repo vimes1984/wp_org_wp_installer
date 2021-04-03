@@ -1,0 +1,59 @@
+{
+  "PAGES": {
+      "HOME": {
+          "TITLE": "WP.org Local setup installer!",
+          "GO_TO_DETAIL": "Go to Detail",
+          "BACK_HOME": "Go back home!",
+          "MAC":  {
+            "TITLE": "Install Mac title",
+            "DESC": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus."
+          },
+          "WINDOWS":  {
+            "TITLE": "Install Windows Title",
+            "DESC": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus."
+          },
+          "LINUX":  {
+            "TITLE": "Install Linux Title",
+            "DESC": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus."
+          },
+          "FOOTER": {
+            "TITLE": "Read More..."
+          }
+      },
+      "MAC": {
+        "TITLE": "Mac Installer!",
+        "DESC" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+        "GO_TO_MAC": "Install Mac",
+        "INSTALLERS": {
+          "ALL": {
+            "TITLE": "Install all",
+            "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+            "BUTTON_TEXT": "Install all"
+          },
+          "VIRTUAL_BOX": {
+            "TITLE": "Install Virtaull Box",
+            "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+            "BUTTON_TEXT": "Install Virtaull Box"
+          },
+          "VAGRANT": {
+            "TITLE": "Install Vagrant",
+            "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+            "BUTTON_TEXT": "Install Vagrant"
+          }
+        }
+      },
+      "LINUX": {
+        "TITLE": "Install Linux!",
+        "DESC" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+        "GO_TO_LINUX": "Install Linux"
+      },
+      "WINDOWS": {
+        "TITLE": "Windows Installer!",
+        "DESC" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+        "GO_TO_WINDOWS": "Install Windows"
+      },
+      "DETAIL": {
+        "TITLE": "Build Details"        
+      }
+  }
+}

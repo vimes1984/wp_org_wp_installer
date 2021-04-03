@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 class="title">{{ 'PAGES.MAC.TITLE' | translate }}</h1>
+      <p>{{'PAGES.MAC.DESC' | translate}}</p>
+       <div class="row">
+         <div class="large-4 columns">
+           <h2>{{'PAGES.MAC.INSTALLERS.ALL.TITLE' | translate}}</h2>
+           <p>{{'PAGES.MAC.INSTALLERS.ALL.DESC' | translate}}</p>
+           <button (click)="installAll()" class="button">{{'PAGES.MAC.INSTALLERS.ALL.BUTTON_TEXT' | translate}}</button>
+          </div>
+         <div class="large-4 columns">
+           <h2>{{'PAGES.MAC.INSTALLERS.VIRTUAL_BOX.TITLE' | translate}}</h2>
+           <p>{{'PAGES.MAC.INSTALLERS.VIRTUAL_BOX.DESC' | translate}}</p>
+           <button (click)="installVirtualBox()" class="button">{{'PAGES.MAC.INSTALLERS.VIRTUAL_BOX.BUTTON_TEXT' | translate}}</button>
+          </div>
+         <div class="large-4 columns">
+           <h2>{{'PAGES.MAC.INSTALLERS.VAGRANT.TITLE' | translate}}</h2>
+           <p>{{'PAGES.MAC.INSTALLERS.VAGRANT.DESC' | translate}}</p>
+           <button (click)="installVagrant()" class="button">{{'PAGES.MAC.INSTALLERS.VAGRANT.BUTTON_TEXT' | translate}}</button>
+          </div>
+       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <a routerLink="/">{{ 'PAGES.HOME.BACK_HOME' | translate }}</a>
+    </div>
+  </div>
+</div>
