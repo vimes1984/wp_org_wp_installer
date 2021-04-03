@@ -37,7 +37,7 @@ With this sample, you can:
 Clone this repository locally:
 
 ``` bash
-git clone https://github.com/maximegris/angular-electron.git
+git clone https://github.com/vimes1984/wp_org_wp_installer.git
 ```
 
 Install dependencies with npm:
