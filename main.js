@@ -3,8 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
-//Import our server side code to run the installers
+/**
+ * Import our server side code to run the installers
+ */
+// Mac
 require('./src/app/mac/server/mac-server.ts');
+// Linux
+require('./src/app/linux/server/linux-server.ts');
+// Windows
+require('./src/app/windows/server/windows-server.ts');
 // Initialize remote module
 require('@electron/remote/main').initialize();
 var win = null;

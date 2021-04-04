@@ -2,8 +2,20 @@ var electron = require('electron');
 
 let macServerSide = {
   testFunc: function(){
+    const sudo = require('sudo-prompt');
+
     electron.ipcMain.on('testFunc',function(event, arg){
         console.log(arg);
+        var options = {
+          name: 'Electron',
+          icns: '/Applications/Electron.app/Contents/Resources/Electron.icns', // (optional)
+        };
+        sudo.exec('echo hello', options,
+          function(error, stdout, stderr) {
+            if (error) throw error;
+            console.log('stdout: ' + stdout);
+            console.log('done!');
+          });
     });
   },
   installAllMac: function(){
