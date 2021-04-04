@@ -1,9 +1,17 @@
-import { app, BrowserWindow, screen } from 'electron';
+import {ipcMain, app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
-//Import our server side code to run the installers
-import {serverSide} from './src/server-side';
-serverSide();
+/**
+ * Import our server side code to run the installers
+ */
+
+// Mac
+require('./src/app/mac/server/mac-server.ts');
+// Linux
+require('./src/app/linux/server/linux-server.ts');
+// Windows
+require('./src/app/windows/server/windows-server.ts');
+
 
 // Initialize remote module
 require('@electron/remote/main').initialize();

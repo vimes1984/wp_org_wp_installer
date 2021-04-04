@@ -100,6 +100,11 @@
     "webdriver-manager": "12.1.8",
     "zone.js": "0.10.3"
   },
+  "browser": { 
+    "fs": false, 
+    "path": false, 
+    "os": false
+  },
   "engines": {
     "node": ">=10.13.0"
   },

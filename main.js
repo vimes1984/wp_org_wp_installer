@@ -4,8 +4,7 @@ var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
 //Import our server side code to run the installers
-var server_side_1 = require("./src/server-side");
-server_side_1.serverSide();
+require('./src/app/mac/server/mac-server.ts');
 // Initialize remote module
 require('@electron/remote/main').initialize();
 var win = null;
