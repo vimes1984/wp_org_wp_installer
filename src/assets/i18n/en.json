@@ -39,6 +39,11 @@
             "TITLE": "Install Vagrant",
             "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
             "BUTTON_TEXT": "Install Vagrant"
+          },
+          "VVV": {
+            "TITLE": "Install VVV",
+            "DESC":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse illum tenetur ad. Hic, similique. Eveniet repudiandae adipisci cupiditate harum, inventore minus iste nulla, corrupti sed eum consequuntur ipsam natus.",
+            "BUTTON_TEXT": "Install VVV"
           }
         }
       },

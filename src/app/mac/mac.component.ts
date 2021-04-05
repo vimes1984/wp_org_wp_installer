@@ -12,6 +12,7 @@ export class MacComponent implements OnInit {
     filesallMac         = '';
     filesVirtualBoxMac  = '';
     filesVagrantMac     = '';
+    filesVVVMac       = '';
     constructor(
       private electronService: ElectronService,
       private _ngZone: NgZone
@@ -23,6 +24,7 @@ export class MacComponent implements OnInit {
           alert('test');
           this.electronService.ipcRenderer.send('testFunc', 'test');
         };
+        // install All
         installAll (){
           alert('install all');
           this.electronService.ipcRenderer.send('installAllMac', 'ALL');
@@ -32,6 +34,18 @@ export class MacComponent implements OnInit {
           console.log(arg);
             this._ngZone.run(()=> {
               this.filesallMac = arg;
+            });
+         };
+         // Install VVV
+         installVVV (){
+          alert('install VVV');
+          this.electronService.ipcRenderer.send('installVVVMac', 'VVV');
+          this.electronService.ipcRenderer.on('installVVVMac-reply', this.returnfunctionVVV.bind(this))
+        };
+        returnfunctionVVV (event, arg){
+          console.log(arg);
+            this._ngZone.run(()=> {
+              this.filesVVVMac = arg;
             });
          };
          //Virtual box xall and return 

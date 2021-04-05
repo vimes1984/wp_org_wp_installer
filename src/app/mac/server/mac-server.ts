@@ -94,9 +94,30 @@ let macServerSide = {
           event.reply('installVagrantMac-reply', result);
         });
     });
+  },
+  installVVVMac: function(){
+    electron.ipcMain.on('installVVVMac', (event, arg) => {
+      console.log(arg) // prints "VVV"
+      const { exec } = require("child_process");
+
+      exec("cd ~/ && ls -la", (error, stdout, stderr) => {
+          if (error) {
+              console.log(`error: ${error.message}`);
+              return;
+          }
+          if (stderr) {
+              console.log(`stderr: ${stderr}`);
+              return;
+          }
+          console.log(`stdout: ${stdout}`);
+          let result = stdout;
+          event.reply('installVVVMac-reply', result);
+        });
+    });
   }
 };
 macServerSide.installAllMac();
 macServerSide.installVagrantMac();
 macServerSide.installVirtualBoxMac();
 macServerSide.testFunc();
+macServerSide.installVVVMac();

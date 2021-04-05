@@ -27,6 +27,24 @@
     </div>
     <div class="row">
       <div class="large-12 columns">
+        <h2>{{'PAGES.MAC.INSTALLERS.VVV.TITLE' | translate}}</h2>
+        <p>{{'PAGES.MAC.INSTALLERS.VVV.DESC' | translate}}</p>
+        <p> Pick a release version to install
+        <select name="releaseveriosn" id="">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </p>
+        <button (click)="installVVV()" class="button">{{'PAGES.MAC.INSTALLERS.VVV.BUTTON_TEXT' | translate}}</button>
+        <p>{{filesVVVMac}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
         <button (click)="testfunc()" class="button">Test Auth</button>
     </div>
   </div>
