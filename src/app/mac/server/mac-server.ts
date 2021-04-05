@@ -16,6 +16,7 @@ let macServerSide = {
             console.log('stdout: ' + stdout);
             console.log('done!');
           });
+          
     });
   },
   installAllMac: function(){
