@@ -43,9 +43,25 @@ let macServerSide = {
             }
           console.log(`stdout: ${stdout}`);
             let result = stdout;
-            exec("unzip /Volumes/MiniMe/vvtest/vagrant-local/stable.zip",function(error, stdout, stderr){
+            exec("cd /Volumes/MiniMe/vvtest/vagrant-local/ && unzip /Volumes/MiniMe/vvtest/vagrant-local/stable.zip",function(error, stdout, stderr){
+              if (error) {
+                  console.log(`error: ${error.message}`);
+                  return;
+              }
+              if (stderr) {
+                  console.log(`stderr: ${stderr}`);
+                  return;
+              }
               console.log(`stdout: ${stdout}`);
               exec("cd /Volumes/MiniMe/vvtest/vagrant-local/VVV-stable  && vagrant status && vagrant plugin install vagrant-goodhosts && vagrant plugin update && vagrant up --provision",function(error, stdout, stderr){
+                if (error) {
+                    console.log(`error: ${error.message}`);
+                    return;
+                }
+                if (stderr) {
+                    console.log(`stderr: ${stderr}`);
+                    return;
+                }
                 console.log(`stdout: ${stdout}`);
               });
             });
