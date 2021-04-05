@@ -23,7 +23,7 @@ let macServerSide = {
       console.log(arg) // prints "ALL"
       const { exec } = require("child_process");
 
-      exec("mkdir /Volumes/MiniMe/vvtest/vagrant-local", (error, stdout, stderr) => {
+      exec("mkdir /Volumes/Dev/vagrant-local", (error, stdout, stderr) => {
           if (error) {
               console.log(`error: ${error.message}`);
               return;
@@ -32,7 +32,7 @@ let macServerSide = {
               console.log(`stderr: ${stderr}`);
               return;
           }
-          exec("cd /Volumes/MiniMe/vvtest/vagrant-local && wget https://github.com/Varying-Vagrant-Vagrants/VVV/archive/refs/heads/stable.zip",function(error, stdout, stderr){
+          exec("cd /Volumes/Dev/vagrant-local && wget https://github.com/Varying-Vagrant-Vagrants/VVV/archive/refs/heads/stable.zip",function(error, stdout, stderr){
             if (error) {
                 console.log(`error: ${error.message}`);
                 return;
@@ -43,7 +43,7 @@ let macServerSide = {
             }
           console.log(`stdout: ${stdout}`);
             let result = stdout;
-            exec("cd /Volumes/MiniMe/vvtest/vagrant-local && unzip /Volumes/MiniMe/vvtest/vagrant-local/stable.zip",function(error, stdout, stderr){
+            exec("cd /Volumes/Dev/vagrant-local && unzip /Volumes/Dev/vagrant-local/stable.zip",function(error, stdout, stderr){
               if (error) {
                   console.log(`error: ${error.message}`);
                   return;
@@ -53,7 +53,7 @@ let macServerSide = {
                   return;
               }
               console.log(`stdout: ${stdout}`);
-              exec("cd /Volumes/MiniMe/vvtest/vagrant-local/VVV-stable  && vagrant status && vagrant plugin install vagrant-goodhosts && vagrant plugin update && vagrant up --provision",function(error, stdout, stderr){
+              exec("cd /Volumes/Dev/vagrant-local/VVV-stable  && vagrant status && vagrant plugin install vagrant-goodhosts && vagrant plugin update && vagrant up --provision",function(error, stdout, stderr){
                 if (error) {
                     console.log(`error: ${error.message}`);
                     return;
