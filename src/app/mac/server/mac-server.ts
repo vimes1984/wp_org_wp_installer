@@ -43,7 +43,7 @@ let macServerSide = {
             }
           console.log(`stdout: ${stdout}`);
             let result = stdout;
-            exec("cd /Volumes/MiniMe/vvtest/vagrant-local/ && unzip /Volumes/MiniMe/vvtest/vagrant-local/stable.zip",function(error, stdout, stderr){
+            exec("cd /Volumes/MiniMe/vvtest/vagrant-local && unzip /Volumes/MiniMe/vvtest/vagrant-local/stable.zip",function(error, stdout, stderr){
               if (error) {
                   console.log(`error: ${error.message}`);
                   return;
